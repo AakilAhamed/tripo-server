@@ -38,10 +38,10 @@ app.listen(port, () => {
 
 
 // Serve Flutter Web static files
-app.use(express.static(path.join(__dirname, '..', 'builds', 'web')));
+//app.use(express.static(path.join(__dirname, '..', 'builds', 'web')));
 
 // Fallback route for Flutter Web routing (SPA)
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'builds', 'web', 'index.html'));
-});
+//app.get('*', (req, res) => {
+ // res.sendFile(path.join(__dirname, '..', 'builds', 'web', 'index.html'));
+//});
 
